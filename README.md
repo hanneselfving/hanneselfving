@@ -1,4 +1,6 @@
 ### Hi there 👋
+### My name is Hannes Elfving. I am a second-year Computer Science student at Mälardalen University in Västerås, Sweden.
+### Here you'll find some of the projects I have been working on. Some of them are related to data structures and algorithms, visualization and scripting.
 
 <!--
 **hanneselfving/hanneselfving** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

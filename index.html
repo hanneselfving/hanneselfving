@@ -2,40 +2,132 @@
 
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Curriculum Vitae</title>
+        <title>Hannes Elfving</title>
         <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
 
-        <div id="main">
+        <div id="main" class="main">
             
-            <div id="side">
+            <div id="top">
+                <div id="icon">
 
+                </div>
+                <div id="navbar">
+                    <div class="navElement" style="left:23%;"><a href="#about">Om mig</a></div>
+                    <div class="navElement" style="left:48%;"><a href="#projects">Projekt</a></div>
+                    <div class="navElement" style="left:73%;"><a href="#contact">Kontakt</a></div>
+                </div>
             </div>
 
             <div id="mid">
 
-            <div id="intro">
-            <h1>Hannes Elfving</h1>
-            <h3>Datavetare</h3>
-            </div>
+                <div id="intro" class="section">
+                <h1>Hannes Elfving</h1>
+                <img id="profileImg" src="DSC07928.JPG">
+                <h3>Teknologie kandidat inom datavetenskap</h3>
+                </div>
 
-            <div id="about">
-            <h2>Kort om mig</h2>
-            </div>
+                <div id="about" class="section">
+                <h2>Kort om mig</h2>
+                    <div id="aboutGenText">
+                        Hallå! Jag studerar datavetenskapliga programmet på Mälardalens Universitet, där jag har utvecklat mina teoretiska
+                        och praktiska kunskaper inom området genom projektarbeten både inom- och utanför skolarbetet. Jag har
+                        god förmåga att skriftligt och muntligt uttrycka mig och att redogöra för och diskutera problem samt att
+                        identifiera, planera och verkställa lösningar. Jag värderar noggrannhet, saklighet och samvetsgrannhet högt.
+                    </div>
+                </div>
 
-            <div id="merits">
-            <h2>Erfarenhet & meriter</h2>
-            </div>
+                <div id="merits" class="section">
+                    <h2>Erfarenhet & meriter</h2>
+                        <div id="education">
+                            <ul>
+                                <li>Mälardalens Högskola</li>
+                                Teknologie kandidatexamen | 2020-2023 (pågående)
+                                Datavetenskap</li>
+                            </ul>
+                        </div>
+                        <div id="courseResults">
+                            
+                                Ett urval av avklarade kurser & betyg (3, 4 eller 5):
+                            <ul>
+                                <li>Datastrukturer, algoritmer och programkonstruktion (DVA104), betyg: 5</li>
+                                <li>Objektorienterad programmering (DVA222), betyg: 4</li>
+                                <li>Datakommunikation (DVA218), betyg: 4</li>
+                                <li>Databaser (DVA247), betyg: 5</li>
+                                <li>Diskret matematik (MMA122), betyg: 4</li>
+                                <li>Linux (DVA249), betyg: 4</li>
+                                <li>Utveckling av webbapplikationer (DVA231), betyg: 4</li>
+                            </ul>
+                           
+                        </div>
 
-            <div id="projects">
-                <h2>Projekt</h2>
-            </div>
+                
+                      
 
-            <div id="contact">
-                <h2>Kontakt</h2>
-            </div>
+                </div>
+
+                <div id="projects" class="section">
+
+                    <div id="myModal" class="modal">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <span id="closeMod">&times;</span>
+                            <h2>Modal Header</h2>
+                            <img src="greedysearch.gif" style="width: 15%; height: 15%;">
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            </div>
+                        </div>
+                        <h2>Projekt</h2>
+                        <div class="projectBox">
+                            <div class="projectItem">
+                                <div class="project-dropdown-content">
+                                    <h4 class="projectTitle">Pathfinding Algorithms</h4>
+                                </div>
+                                <img src="greedysearch.gif" id="pFindImg" class="projectImg">
+                            </div>
+                            <div class="projectItem">
+                                <div class="project-dropdown-content">
+                                    <h4 class="projectTitle">Sorting Algorithm Visualizer</h4>
+                                </div>
+                                <img src="sorting visualizer screenshot.png" id="SAlgImg" class="projectImg">
+                            </div>
+                            <div class="projectItem">
+                                <div class="project-dropdown-content">
+                                    <h4 class="projectTitle">Linux System Manager</h4>
+                                </div>
+                                <img src="System Manager Screenshot.png" id="linuxImg" class="projectImg">
+                            </div>
+                            <div class="projectItem">
+                                <div class="project-dropdown-content">
+                                    <h4 class="projectTitle">Binary Search Tree Visualizer</h4>
+                                </div>
+                                <img src="bst.png" class="projectImg">
+                            </div>
+                            <div class="projectItem">
+                                <div class="project-dropdown-content">
+                                    <h4 class="projectTitle">Reliable Data Transfer Visualizer</h4>
+                                </div>
+                                <img src="Reliable Data Transfer.gif" class="projectImg">
+                            </div>
+                            <div class="projectItem">
+                                <div class="project-dropdown-content">
+                                    <h4 class="projectTitle">Reliable Data Transfer Simulation</h4>
+                                </div>
+                                <img src="setup-final v2.png" class="projectImg">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                <div id="contact" class="section">
+                    <h2>Kontakt</h2>
+                </div>
                 
             </div>
 
@@ -48,5 +140,5 @@
 
     </body>
 
-
+    <script src="jsFile.js"></script>
 </html>

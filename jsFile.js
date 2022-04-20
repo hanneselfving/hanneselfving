@@ -48,6 +48,13 @@
           modal.getElementsByTagName('img')[0].src = "setup-final v2.png"
           modal.getElementsByClassName("modal-body")[0].innerHTML = "An application for simulating reliable data transfer"
           }
+
+          items[6].onclick = function() {
+            modal.style.display = "block";
+            modal.getElementsByTagName('h2')[0].innerHTML = "Tower Defense"
+            modal.getElementsByTagName('img')[0].src = "screenshot.png"
+            modal.getElementsByClassName("modal-body")[0].innerHTML = "A tower defense game developed with Java Swing"
+            }
     
 
 

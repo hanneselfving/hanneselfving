@@ -31,7 +31,7 @@
     items[3].onclick = function() {
       modal.style.display = "block";
       modal.getElementsByTagName('h2')[0].innerHTML = "Binary Search Tree Visualizer"
-      modal.getElementsByTagName('img')[0].src = "bst.PNG"
+      modal.getElementsByTagName('img')[0].src = "bst.png"
       modal.getElementsByClassName("modal-body")[0].innerHTML = "An application for demonstrating a binary search tree and its operations"
       }
 

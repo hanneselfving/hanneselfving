@@ -1,5 +1,5 @@
 ### Hi there 👋
-### My name is Hannes Elfving. I am a second-year Computer Science student at Mälardalen University in Västerås, Sweden.
+### My name is Hannes. I am a second-year Computer Science student at Mälardalen University in Västerås, Sweden.
 ### Here you'll find some of the projects I have been working on. Some of them are related to data structures and algorithms, data communication, visualization, games and bash scripting.
 ### View my web-page: https://hanneselfving.github.io/hanneselfving/
 

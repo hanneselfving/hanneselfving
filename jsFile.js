@@ -25,7 +25,7 @@
     modal.style.display = "block";
     modal.getElementsByTagName('h2')[0].innerHTML = "Linux System Manager"
     modal.getElementsByTagName('img')[0].src = "System Manager Screenshot.png"
-    modal.getElementsByClassName("modal-body")[0].innerHTML = "A shell script for capable of executing sets of important Linux commands"
+    modal.getElementsByClassName("modal-body")[0].innerHTML = "A shell script for convenient execution of sets of important UNIX/Linux commands"
     }
 
     items[3].onclick = function() {

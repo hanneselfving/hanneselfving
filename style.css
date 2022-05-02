@@ -53,7 +53,7 @@ body {
 
 #profileImg {
     object-fit: cover;
-    height: 500px;
+    width: 20%;
     object-position: 50% 30%;
 }
 
@@ -203,3 +203,19 @@ li {
 
     display: list-item;
 }
+
+
+@media screen and (max-width: 500px) {
+    #navbar a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    #navBar {
+        float:none;
+    }
+    .navElement {
+        display:block;
+    }
+
+  }

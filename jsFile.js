@@ -52,7 +52,7 @@
           items[6].onclick = function() {
             modal.style.display = "block";
             modal.getElementsByTagName('h2')[0].innerHTML = "Tower Defense"
-            modal.getElementsByTagName('img')[0].src = "screenshot.png"
+            modal.getElementsByTagName('img')[0].src = "screenshot.PNG"
             modal.getElementsByClassName("modal-body")[0].innerHTML = "A tower defense game developed with Java Swing"
             }
     

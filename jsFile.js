@@ -10,8 +10,8 @@
    items[0].onclick = function() {
     modal.style.display = "block";
     modal.getElementsByTagName('h2')[0].innerHTML = "Ordtestet"
-    modal.getElementsByTagName('img')[0].src = "logo512x512svartbg.png"
-    modal.getElementsByClassName("modal-body")[0].innerHTML = "Ordtestet - bemästra svenska språket genom frågor & svar!"
+    modal.getElementsByTagName('img')[0].src = "ordlogo512x512svartbg.png"
+    modal.getElementsByClassName("modal-body")[0].innerHTML = "Ordtestet - Testa dina ordkunskaper!"
     }
     
 

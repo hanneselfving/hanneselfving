@@ -63,4 +63,22 @@
        modal.style.display = "none";
      }
    }
+
+  let news = document.getElementById("intro");   
+  let i = 0;
+
+            
+
+  let pics = [ "ScreenshotMain.png", "ScreenshotRound.png", "ScreenshotStats.png"];
+
+            
+
+  news.setAttribute("style", "background-image: url(" + pics[i] + ");background-repeat: no-repeat; background-size: contain; background-position: center;");
+
+            function toggle() {
+            news.setAttribute("style", "background-image: url(" + pics[i] + "); background-repeat: no-repeat; background-size: contain; background-position: center;");
+            i = (i + 1) % pics.length;  // update the counter
+            }
+
+            setInterval(toggle, 2500); //30000
    

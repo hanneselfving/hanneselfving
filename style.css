@@ -62,6 +62,12 @@ body {
     object-position: 50% 30%;
 }
 
+#intro {
+
+    height: 720px;
+
+}
+
 .main {
 
     border: whitesmoke;

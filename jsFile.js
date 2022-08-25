@@ -69,7 +69,7 @@
 
             
 
-  let pics = [ "ScreenshotMain.png", "ScreenshotRound.png", "ScreenshotStats.png", "PP_ScreenshotMain.png", "PP_ScreenshotApple.png"];
+  let pics = [ "ScreenshotMain.png", "ScreenshotRound.png", "ScreenshotStats.png", "PP_ScreenshotMain.PNG", "PP_ScreenshotApple.PNG"];
 
             
 

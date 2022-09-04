@@ -80,5 +80,5 @@
             i = (i + 1) % pics.length;  // update the counter
             }
 
-            setInterval(toggle, 2500); //30000
+            setInterval(toggle, 5000); //30000
    

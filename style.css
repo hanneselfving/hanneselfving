@@ -40,6 +40,12 @@ body {
 
 }
 
+#integrity {
+    margin:auto;
+    width: 1000px;
+    text-align: center;
+}
+
 #aboutGenText {
     padding-left: 20%;
     padding-right: 20%;

@@ -12,7 +12,7 @@
                 modal.style.display = "block";
                 modal.getElementsByTagName('h2')[0].innerHTML = "Ordprovet"
                 modal.getElementsByTagName('img')[0].src = "ordlogo512x512alphabg.png"
-                modal.getElementsByClassName("modal-body")[0].innerHTML = "Ordtestet - Practice your knowledge of the swedish language!\nAvailable on Google Play soon!"
+                modal.getElementsByClassName("modal-body")[0].innerHTML = "<p>Ordtestet - Practice your knowledge of the swedish language!</p><p>Available on Google Play soon!</p>"
                 }
 
    items[1].onclick = function() {
@@ -39,7 +39,7 @@
     items[4].onclick = function() {
       modal.style.display = "block";
       modal.getElementsByTagName('h2')[0].innerHTML = "Binary Search Tree Visualizer"
-      modal.getElementsByTagName('img')[0].src = "bst.PNG"
+      modal.getElementsByTagName('img')[0].src = "binarysearchtree.png"
       modal.getElementsByClassName("modal-body")[0].innerHTML = "An application for demonstrating a binary search tree and its operations<p><a href='https://github.com/hanneselfving/Binary-Search-Tree-Visualizer'>Link</a></p>"
       }
 
@@ -64,66 +64,6 @@
             modal.getElementsByClassName("modal-body")[0].innerHTML = "A tower defense game developed with Java Swing<p><a href='https://github.com/hanneselfving/Troll-Attack-TowerDefense'>Link</a></p>"
             }
 
-
-
-  //  for(var i = 0; i < items.length; i++) {
-  //          var item = items[i];
-
-  //          if(i == 0) {
-  //           var title = "Ordtestet";
-  //           var img = document.getElementById("ordlogo");
-  //           items.onclick = function() {
-  //             modal.style.display = "block";
-  //             modal.getElementsByTagName('h2')[0].innerHTML = "Ordtestet"
-  //             modal.getElementsByTagName('img')[0].src = "ordlogo512x512alphabg.png"
-  //             modal.getElementsByClassName("modal-body")[0].innerHTML = "Ordtestet - Practice your knowledge of the swedish language!\nAvailable on Google Play soon!"
-  //             }
-
-
-  //          }
-
-  //          else if(i == 1) {
-  //               var title = "Pathfinder";
-  //               var img = document.getElementById("pFindImg");
-  //               item.onclick = function() {
-  //               modal.style.display = "block";
-  //               modal.getElementsByTagName('h2')[0].innerHTML = title
-  //               modal.getElementsByTagName('img')[0] = img
-  //               modal.getElementsByClassName("modal-body")[0].innerHTML = "An application for demonstrating and testing various pathfinding algorithms"
-  //               }
-  //          }
-  //          else if(i == 2) {
-  //           var title = "Sorting Algorithm Visualizer";
-  //           var img = document.getElementById("SAlgImg");
-  //               item.onclick = function() {
-  //               modal.style.display = "block";
-  //               modal.getElementsByTagName('h2')[0].innerHTML = title
-  //               modal.getElementsByTagName('img')[0] = img
-  //               modal.getElementsByClassName("modal-body")[0].innerHTML = "An application for demonstrating sorting algorithms"
-  //               }
-  //           }
-  //           else if(i == 3) {
-  //               var title = "Linux System Manager";
-  //               var img = document.getElementById("linuxImg");
-  //                   item.onclick = function() {
-  //                   modal.style.display = "block";
-  //                   modal.getElementsByTagName('h2')[0].innerHTML = title
-  //                   modal.getElementsByTagName('img')[0] = img
-  //                   modal.getElementsByClassName("modal-body")[0].innerHTML = "A shell script for important Linux commands"
-  //                   }
-  //               }
-
-  //               else if(i == 4) {
-  //                 var title = "Binary Search Tree Visualizer";
-  //                 var img = document.getElementById("bstImg");
-  //                     item.onclick = function() {
-  //                     modal.style.display = "block";
-  //                     modal.getElementsByTagName('h2')[0].innerHTML = title
-  //                     modal.getElementsByTagName('img')[0] = img
-  //                     modal.getElementsByClassName("modal-body")[0].innerHTML = "Visualizer for binary search tree"
-  //                     }
-  //                 }    
-  //      }
    
    // When the user clicks on <span> (x), close the modal
    span.onclick = function() {
@@ -154,4 +94,16 @@
             }
 
             setInterval(toggle, 5000); //30000
+
+
    
+            var prevScrollpos = window.pageYOffset;
+            window.onscroll = function() {
+              var currentScrollPos = window.pageYOffset;
+              if (prevScrollpos > currentScrollPos) {
+                document.getElementById("top").style.top = "0";
+              } else {
+                document.getElementById("top").style.top = "-102px";
+              }
+              prevScrollpos = currentScrollPos;
+            }

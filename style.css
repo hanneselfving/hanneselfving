@@ -31,7 +31,7 @@ body {
 
     background-color: white;
     border:whitesmoke;
-    padding-top:80px;
+    padding-top:102px;
 
 }
 
@@ -96,7 +96,7 @@ body {
 
 .navElement {
 
-    position: absolute;
+    position: flex;
     display:inline;
     padding: 8px;
     color:white;
@@ -108,7 +108,7 @@ body {
 .projectItem {
 
     color: #333333;
-    opacity: 75%;
+    opacity: 100%;
     display:inline-block;
     width: 33%;
     height: 33%;
@@ -128,7 +128,7 @@ body {
     position:absolute;
     display:inline;
     height: 20px;
-    transition:height 0.5s ease-in;
+    transition:height 0.2s ease-in;
     z-index: 1;
 
 

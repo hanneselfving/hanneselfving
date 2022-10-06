@@ -12,7 +12,7 @@
                 modal.style.display = "block";
                 modal.getElementsByTagName('h2')[0].innerHTML = "Ordprovet"
                 modal.getElementsByTagName('img')[0].src = "ordlogo512x512alphabg.png"
-                modal.getElementsByClassName("modal-body")[0].innerHTML = "<p>Ordtestet - Practice your knowledge of the swedish language!</p><p>Available on Google Play soon!</p>"
+                modal.getElementsByClassName("modal-body")[0].innerHTML = "<p>Ordtestet - Practice your knowledge of the swedish language!</p><a href='https://play.google.com/store/apps/details?id=com.victoria.ordtestet&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>"
                 }
 
    items[1].onclick = function() {

@@ -102,8 +102,10 @@
               var currentScrollPos = window.pageYOffset;
               if (prevScrollpos > currentScrollPos) {
                 document.getElementById("top").style.top = "0";
+                //document.getElementById("top").style.visibility = visible;
               } else {
-                document.getElementById("top").style.top = "-102px";
+                document.getElementById("top").style.top = "-999px";
+                 // document.getElementById("top").style.visibility = hidden;
               }
               prevScrollpos = currentScrollPos;
             }

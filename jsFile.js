@@ -77,7 +77,7 @@
      }
    }
 
-  let news = document.getElementById("intro");   
+  let news = document.getElementById("highlightImg");   
   let i2 = 0;
 
             
@@ -86,11 +86,11 @@
 
             
 
-  news.setAttribute("style", "background-image: url(" + pics[i2] + ");background-repeat: no-repeat; background-size: contain; background-position: center;");
+  news.setAttribute("style", "src: url(" + pics[0] +");height: 100%;");
 
             function toggle() {
-            news.setAttribute("style", "background-image: url(" + pics[i2] + "); background-repeat: no-repeat; background-size: contain; background-position: center;");
-            i2 = (i2 + 1) % pics.length;  // update the counter
+              news.setAttribute("style", "src: url(" + pics[i2] +"); height: 100%;");
+              i2 = (i2 + 1) % pics.length;  // update the counter
             }
 
             setInterval(toggle, 5000); //30000

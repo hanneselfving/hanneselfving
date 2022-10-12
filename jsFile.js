@@ -12,7 +12,7 @@
                 modal.style.display = "block";
                 modal.getElementsByTagName('h2')[0].innerHTML = "Ordprovet"
                 modal.getElementsByTagName('img')[0].src = "ordlogo512x512alphabg.png"
-                modal.getElementsByClassName("modal-body")[0].innerHTML = "<p>Ordtestet - Practice your knowledge of the swedish language!</p><a href='https://play.google.com/store/apps/details?id=com.victoria.ordtestet&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>"
+                modal.getElementsByClassName("modal-body")[0].innerHTML = "<p>Ordtestet - Practice your knowledge of the swedish language!</p><a href='https://play.google.com/store/apps/details?id=com.victoria.ordtestet&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/pics/badges/en_badge_web_generic.png'/></a>"
                 }
 
    items[1].onclick = function() {
@@ -44,17 +44,17 @@
       }
 
       items[5].onclick = function() {
-        modal.style.display = "block";
+        modal.style.display = "block"; 
         modal.getElementsByTagName('h2')[0].innerHTML = "Reliable Data Transfer Visualizer"
         modal.getElementsByTagName('img')[0].src = "Reliable Data Transfer.gif"
-        modal.getElementsByClassName("modal-body")[0].innerHTML = "An application for demonstrating reliable data transfer<p><a href='https://github.com/hanneselfving/Reliable-Data-Transfer-C'>Link</a></p>"
+        modal.getElementsByClassName("modal-body")[0].innerHTML = "An application for demonstrating reliable data transfer<p><a href='https://github.com/hanneselfving/RDP-Visualizer'>Link</a></p>"
         }
 
         items[6].onclick = function() {
           modal.style.display = "block";
           modal.getElementsByTagName('h2')[0].innerHTML = "Reliable Data Transfer Simulation"
           modal.getElementsByTagName('img')[0].src = "setup-final v2.png"
-          modal.getElementsByClassName("modal-body")[0].innerHTML = "An application for simulating reliable data transfer<p><a href='https://github.com/hanneselfving/RDP-Visualizer'>Link</a></p>"
+          modal.getElementsByClassName("modal-body")[0].innerHTML = "An application for simulating reliable data transfer<p><a href='https://github.com/hanneselfving/Reliable-Data-Transfer-C'>Link</a></p>"
           }
 
           items[7].onclick = function() {
@@ -82,18 +82,44 @@
 
             
 
-  let pics = [ "ScreenshotMain.png", "ScreenshotRound.png", "ScreenshotStats.png", "PP_ScreenshotMain.PNG", "PP_ScreenshotApple.PNG"];
+  let pics = [ "Screenshot_20221005_194748_Main.png", "ScreenshotRound.png", "Screenshot_20221005_194914_InGame.png", "ScreenshotStats.png", "PP_ScreenshotMain.PNG", "PP_ScreenshotApple.PNG"];
 
             
 
-  news.setAttribute("style", "src: url(" + pics[0] +");height: 100%;");
+  news.src=pics[i2];
 
             function toggle() {
-              news.setAttribute("style", "src: url(" + pics[i2] +"); height: 100%;");
               i2 = (i2 + 1) % pics.length;  // update the counter
+              news.src=pics[i2];
             }
 
-            setInterval(toggle, 5000); //30000
+            // setInterval(toggle, 5000); //30000
+
+              function fadeIn()
+              {
+                  news.classList.remove("fade-out");
+                  news.classList.add("fade-in");    
+              }
+
+              function fadeOut()
+              {
+                  news.classList.remove("fade-in");
+                  news.classList.add("fade-out");
+
+                  // Add listener to the "transitionend" event.
+                  
+                  news.addEventListener("transitionend", function x()
+                  {
+                      // Remove the previously added listener, change
+                      // the image and fade-in the new image.
+                      
+                      news.removeEventListener("transitionend", x);
+                      toggle();
+                      fadeIn();
+                  });
+              }
+
+              setInterval(fadeOut, 3500);
 
 
    
@@ -109,3 +135,6 @@
               }
               prevScrollpos = currentScrollPos;
             }
+
+
+      

@@ -27,16 +27,23 @@ body {
 
 }
 
+#highlightImg {
+
+    max-width: 100%;
+    max-height: 100%;
+    height:auto;
+    width: auto;
+    min-width: 200px;
+    min-height: 200px;
+
+}
+
 #mid {
 
     background-color: white;
     border:whitesmoke;
     padding-top:102px;
 
-}
-
-#highlighImg {
-    height: 100%;
 }
 
 #bot {
@@ -79,7 +86,10 @@ body {
 
 #intro {
 
+    max-height: 720px;
     height: 720px;
+    min-height: 200px;
+    min-width: 200px;
 
 }
 
@@ -254,4 +264,19 @@ li {
         display:block;
     }
 
+  }
+
+  .fade {
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .fade-out {
+    opacity: 0;
+  }
+  
+  .fade-in {
+    opacity: 1;
   }

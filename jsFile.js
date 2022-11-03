@@ -12,7 +12,7 @@
                 modal.style.display = "block";
                 modal.getElementsByTagName('h2')[0].innerHTML = "Ordprovet"
                 modal.getElementsByTagName('img')[0].src = "ordlogo512x512alphabg.png"
-                modal.getElementsByClassName("modal-body")[0].innerHTML = "<p>Ordtestet - Practice your knowledge of the swedish language!</p><a href='https://play.google.com/store/apps/details?id=com.victoria.ordtestet&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/pics/badges/en_badge_web_generic.png'/></a>"
+                modal.getElementsByClassName("modal-body")[0].innerHTML = "<p>Ordtestet - Practice your knowledge of the swedish language!</p><a href='https://play.google.com/store/apps/details?id=com.victoria.ordtestet&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png'/></a>"
                 }
 
    items[1].onclick = function() {
@@ -63,6 +63,13 @@
             modal.getElementsByTagName('img')[0].src = "screenshot.PNG"
             modal.getElementsByClassName("modal-body")[0].innerHTML = "A tower defense game developed with Java Swing<p><a href='https://github.com/hanneselfving/Troll-Attack-TowerDefense'>Link</a></p>"
             }
+
+            items[8].onclick = function() {
+              modal.style.display = "block";
+              modal.getElementsByTagName('h2')[0].innerHTML = "Library Management System Design"
+              modal.getElementsByTagName('img')[0].src = "Class Diagram of Library Management System.png"
+              modal.getElementsByClassName("modal-body")[0].innerHTML = "A design of a library management system<p><a href='https://github.com/hanneselfving/Library-System-UML-Design'>Link</a></p>"
+              }
 
    
    // When the user clicks on <span> (x), close the modal
